@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OPSFORM.005</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8"/>
+
+	<script src="html2pdf.bundle.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body id="capture">
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-xs-6 left">
+				<h4 class="formHeader">ict services</h4>
+			</div>
+			<div class="col-xs-6 right">
+				<h4 class="formHeader">opsform.005 (new user)</h4>
+			</div>
+		</div>
+
+		<div class="row header">
+			<div class="col-xs-12 text">
+				<p>(a) User Details <a title="Basic details for new user. Please complete all sections." data-toggle="tooltip" data-placement="bottom">[?]</a></p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-2 tag">
+				<p>First Name:</p>
+			</div>
+			<div class="col-xs-4 input" >
+				<input type="text" name="" class="inputFill">
+			</div>
+			<div class="col-xs-2 tag">
+				<p>Position:</p>
+			</div>
+			<div class="col-xs-4 input">
+				<input type="text" name="" class="inputFill">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-2 tag">
+				<p>Last Name:</p>
+			</div>
+			<div class="col-xs-4 input">
+				<input type="text" name="" class="inputFill">
+			</div>
+			<div class="col-xs-2 tag">
+				<p>Department:</p>
+			</div>
+			<div class="col-xs-4 input" title="Select deparment from options listed." data-toggle="tooltip" data-placement="bottom">
+				<select required  class="inputFill">
+					<option value="" disabled selected>Select your option</option>
+					<optgroup label="Chief Exec">
+						<option>Option 1</option>
+					</optgroup>
+					<optgroup label="Deputy Chief Exec">
+						<option>Business & Transformation</option>
+						<option>ICT Services</option>
+						<option>Customer Services</option>
+					</optgroup>
+
+				</select>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-2 tag">
+				<p>Extension:</p>
+			</div>
+			<div class="col-xs-4 input">
+				<input type="text" name=""  class="inputFill" title="If user requires a desk phone to be setup, please state in (B) Required Equipment" data-toggle="tooltip" data-placement="bottom">
+			</div>
+			<div class="col-xs-2 tag ">
+				<p>Start Date:</p>
+			</div>
+			<div class="col-xs-4 input">
+				<input type="date" name="" class="inputFill" title="Please provide at least 7 days notice to allow us to complete the account for the user starting" data-toggle="tooltip" data-placement="bottom">
+			</div>
+		</div>
+
+		<div class="row header">
+			<div class="col-xs-12 text">
+				<p>(b) Required Equipment <a title="Any equipment required by new user. If there is not a current desk for use please ensure the option below is ticked" data-toggle="tooltip" data-placement="bottom">[?]</a></p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 tag">
+				<div class="checkbox no-top-margin">
+					<label>
+						<input type="checkbox"> A new desk requires to be setup with the following equipment.
+					</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 text">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox"> Desk Phone
+					</label>
+					<label>
+						<input type="checkbox"> Mobile Phone
+					</label>
+					<label>
+						<input type="checkbox"> Smart Phone
+					</label>
+					<label>
+						<input type="checkbox"> Desktop
+					</label>
+					<label>
+						<input type="checkbox"> Laptop
+					</label>
+					<label>
+						<input type="checkbox"> Freja Token
+					</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 tag">
+				<p>Any other requirements:</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 no-padding">
+				<div class="form-group no-margin">
+					<textarea class="form-control" rows="4" id="comment"></textarea>
+				</div> 
+			</div>
+		</div>
+
+		<div class="row header">
+			<div class="col-xs-12 text">
+				<p>(c) Account Access <a title="Any equipment required by new user. Such as, but not limited to: Desktop, Mobile Phone" data-toggle="tooltip" data-placement="bottom">[?]</a></p>
+			</div>
+		</div>
+
+		<div class="row header">
+			<div class="col-xs-12 text">
+				<p>(d) System Access <a title="Any equipment required by new user. Such as, but not limited to: Desktop, Mobile Phone" data-toggle="tooltip" data-placement="bottom">[?]</a></p>
+			</div>
+		</div>
+
+<!-- 		<div id="saveSection" class="row">
+			<div class="col-xs-12">
+				<button>SAVE PAGE</button>
+			</div>
+		</div> -->
+
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+
+<!-- 	<script type="text/javascript">
+		var element = document.getElementById('capture');
+		html2pdf(element, {
+			filename:     'OPSFORM.005.pdf',
+			image:        { type: 'jpg', quality: 1 },
+			html2canvas:  { dpi: 200, imageTimeout:0, ignoreElements: ["saveSection"]},
+			jsPDF:        { unit: 'px', format: 'a4', orientation: 'portrait', hotfixes: ["px_scaling"] }
+		});
+	</script> -->
+
+
+</body>
+</html>
