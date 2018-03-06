@@ -1,55 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>OPSFORM.005</title>
 
+	<!-- Meta Tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8"/>
+	<!--  -->
 
-	<script src="html2pdf.bundle.js"></script>
+	<title>
+		OPSFORM.005 (New User) | ICT Services
+	</title>
 
-
+	<!-- Style Sheets -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--  -->
 
 </head>
-<body id="capture">
+<body>
 
+	<!-- Broxtowe Borough Council Logo -->
+	<div class="container logo_container">
+		<img src="logo.jpg" class="image_logo">
+	</div>
+	<!--  -->
+
+	<!-- User Creation Form  Container -->
 	<div class="container">
 
+		<!-- Form Title -->
 		<div class="row">
-			<div class="col-xs-6 left">
-				<h4 class="formHeader">ict services</h4>
+			<div class="col-xs-6 align_left">
+				<h4 class="formHeader">
+					ict services
+				</h4>
 			</div>
-			<div class="col-xs-6 right">
-				<h4 class="formHeader">opsform.005 (new user)</h4>
+			<div class="col-xs-6 align_right">
+				<h4 class="formHeader">
+					opsform.005 (new user)
+				</h4>
 			</div>
 		</div>
+		<!--  -->
 
+		<!-- User Details | Header -->
 		<div class="row header">
 			<div class="col-xs-12 text">
-				<p>(a) User Details <a title="Basic details for new user. Please complete all sections." data-toggle="tooltip" data-placement="bottom">[?]</a></p>
+				<p>
+					(a) User Details <a title="Basic details for new user. Please complete all sections." data-toggle="tooltip" data-placement="bottom">[?]</a>
+				</p>
 			</div>
 		</div>
+		<!--  -->
 
+		<!-- User Details | Row 1 Content -->
 		<div class="row">
 			<div class="col-xs-2 tag">
-				<p>First Name:</p>
+				<p>
+					First Name:
+				</p>
 			</div>
 			<div class="col-xs-4 input" >
 				<input type="text" name="" class="inputFill">
 			</div>
 			<div class="col-xs-2 tag">
-				<p>Position:</p>
+				<p>
+					Position:
+				</p>
 			</div>
 			<div class="col-xs-4 input">
 				<input type="text" name="" class="inputFill">
 			</div>
 		</div>
+		<!--  -->
 
+		<!-- User Details | Row 2 Content -->
 		<div class="row">
 			<div class="col-xs-2 tag">
-				<p>Last Name:</p>
+				<p>
+					Last Name:
+				</p>
 			</div>
 			<div class="col-xs-4 input">
 				<input type="text" name="" class="inputFill">
@@ -64,7 +94,7 @@
 						<option>Option 1</option>
 					</optgroup>
 					<optgroup label="Deputy Chief Exec">
-						<option>Business & Transformation</option>
+						<option>Business and Transformation</option>
 						<option>ICT Services</option>
 						<option>Customer Services</option>
 					</optgroup>
@@ -72,7 +102,9 @@
 				</select>
 			</div>
 		</div>
+		<!--  -->
 
+		<!-- User Details | Row 3 Content -->
 		<div class="row">
 			<div class="col-xs-2 tag">
 				<p>Extension:</p>
@@ -84,13 +116,41 @@
 				<p>Start Date:</p>
 			</div>
 			<div class="col-xs-4 input">
-				<input type="date" name="" class="inputFill" title="Please provide at least 7 days notice to allow us to complete the account for the user starting" data-toggle="tooltip" data-placement="bottom">
+				<input type="date" name="" class="inputFill" title="Please provide at least 7 days notice to allow us to complete the setup for the new user" data-toggle="tooltip" data-placement="bottom">
+
 			</div>
 		</div>
+		<!--  -->
 
 		<div class="row header">
 			<div class="col-xs-12 text">
-				<p>(b) Required Equipment <a title="Any equipment required by new user. If there is not a current desk for use please ensure the option below is ticked" data-toggle="tooltip" data-placement="bottom">[?]</a></p>
+				<p>(b) Current Equipment <a title="Any equipment required by new user. If there is not a current desk for use please ensure the option below is ticked" data-toggle="tooltip" data-placement="bottom">[?]</a></p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-2 tag">
+				<p>
+					Machine number:
+				</p>
+			</div>
+			<div class="col-xs-4 input" >
+				<input type="text" name="" class="inputFill">
+			</div>
+			<div class="col-xs-1 tag">
+				<p>
+					Other:
+				</p>
+			</div>
+			<div class="col-xs-5 input">
+				<input type="text" name="" class="inputFill">
+			</div>
+		</div>
+
+
+		<div class="row header">
+			<div class="col-xs-12 text">
+				<p>(c) Required Equipment <a title="Any equipment required by new user. If there is not a current desk for use please ensure the option below is ticked" data-toggle="tooltip" data-placement="bottom">[?]</a></p>
 			</div>
 		</div>
 
@@ -105,35 +165,77 @@
 		</div>
 
 		<div class="row">
+			<div class="col-xs-12 no-padding">
+				<div class="form-group no-margin">
+					<textarea class="form-control" rows="4" id="comment" placeholder="e.g. Desktop, Laptop, Desk Phone, Mobile Phone, Monitor, and any DSE required equipment. "></textarea>
+				</div> 
+			</div>
+		</div>
+
+		<div class="row header">
 			<div class="col-xs-12 text">
-				<div class="checkbox">
-					<label>
-						<input type="checkbox"> Desk Phone
-					</label>
-					<label>
-						<input type="checkbox"> Mobile Phone
-					</label>
-					<label>
-						<input type="checkbox"> Smart Phone
-					</label>
-					<label>
-						<input type="checkbox"> Desktop
-					</label>
-					<label>
-						<input type="checkbox"> Laptop
-					</label>
-					<label>
-						<input type="checkbox"> Freja Token
-					</label>
-				</div>
+				<p>(d) Account Access <a title="Access to the system" data-toggle="tooltip" data-placement="bottom">[?]</a></p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-9 tag">
+				<p>Current user to replicate if desired (If not applicable, state required access below):</p>
+			</div>
+			<div class="col-xs-3 input">
+				<input type="text" name="" class="inputFill">
+			</div>
+		</div>		
+
+		<div class="row">
+			<div class="col-xs-12 no-padding">
+				<div class="form-group no-margin">
+					<textarea class="form-control" rows="4" id="comment" placeholder="e.g. Wireless access for laptop, Access to 1.2 ICT Folder, Internet Access, and any existing mailboxes the user will need access too."></textarea>
+				</div> 
+			</div>
+		</div>
+
+		<div class="row header">
+			<div class="col-xs-12 text">
+				<p>(e) System Access <a title="Any equipment required by new user. Such as, but not limited to: Desktop, Mobile Phone" data-toggle="tooltip" data-placement="bottom">[?]</a></p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-9 tag">
+				<p>Current user who's access to replicate for the below systems:</p>
+			</div>
+			<div class="col-xs-3 input">
+				<input type="text" name="" class="inputFill">
+			</div>
+		</div>	
+
+		<div class="row">
+			<div class="col-xs-12 no-padding">
+				<div class="form-group no-margin">
+					<textarea class="form-control" rows="4" id="comment" placeholder="e.g. Information@Work, Nortgate FrontOffice, Webpay, Civica Legal, Dart Reporting"></textarea>
+				</div> 
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-xs-12 tag">
-				<p>Any other requirements:</p>
+				<p>Please note ICT do not grant access for all systems. Please refer for who to contact: System Owners</p>
+			</div>
+		</div>	
+
+
+		<div class="row header">
+			<div class="col-xs-12 text">
+				<p>(f) Additional Notes</p>
 			</div>
 		</div>
+		
+		<div class="row">
+			<div class="col-xs-12 tag">
+				<p>If you require ICT to be aware of any further information, please state below:</p>
+			</div>
+		</div>	
 
 		<div class="row">
 			<div class="col-xs-12 no-padding">
@@ -143,39 +245,15 @@
 			</div>
 		</div>
 
-		<div class="row header">
-			<div class="col-xs-12 text">
-				<p>(c) Account Access <a title="Any equipment required by new user. Such as, but not limited to: Desktop, Mobile Phone" data-toggle="tooltip" data-placement="bottom">[?]</a></p>
-			</div>
-		</div>
-
-		<div class="row header">
-			<div class="col-xs-12 text">
-				<p>(d) System Access <a title="Any equipment required by new user. Such as, but not limited to: Desktop, Mobile Phone" data-toggle="tooltip" data-placement="bottom">[?]</a></p>
-			</div>
-		</div>
-
-<!-- 		<div id="saveSection" class="row">
-			<div class="col-xs-12">
-				<button>SAVE PAGE</button>
-			</div>
-		</div> -->
-
 	</div>
+	<!--  -->
+
+
+	<!-- Scripts -->
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="script.js"></script>
-
-<!-- 	<script type="text/javascript">
-		var element = document.getElementById('capture');
-		html2pdf(element, {
-			filename:     'OPSFORM.005.pdf',
-			image:        { type: 'jpg', quality: 1 },
-			html2canvas:  { dpi: 200, imageTimeout:0, ignoreElements: ["saveSection"]},
-			jsPDF:        { unit: 'px', format: 'a4', orientation: 'portrait', hotfixes: ["px_scaling"] }
-		});
-	</script> -->
-
+	<!--  -->
 
 </body>
 </html>

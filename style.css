@@ -1,21 +1,44 @@
+/* Logo CSS */
 
-#capture .container {
+body .logo_container {
+	text-align: center;
+	border: 0;
+	margin-bottom: 0;
+}
+
+
+.image_logo {
+	height: 100px;
+	margin: 15px;
+}
+
+
+/* Form Title CSS*/
+.align_left {
+	text-align: left;
+}
+
+.align_right {
+	text-align: right;
+}
+
+
+textarea { 
+   /* will prevent resizing horizontally */
+   resize:vertical;
+}
+
+.container {
 	width: 752px;
 	border: 1px solid black;
+	margin-bottom: 80px;
 }
 .container .formHeader {
 	text-transform: uppercase;
 	font-size: 1em;
 }
 
-.left {
-	text-align: left;
-	vertical-align: center;
-}
 
-.right {
-	text-align: right;
-}
 
 .header {
 	background-color: #BABDBF;
@@ -28,6 +51,8 @@
 	background-color: #D9D9D9;
 	height: 30px;
 	margin: 0;
+	padding-left: 5px;
+	padding-right: 0px;
 }
 .tag>p {
 	background-color: #D9D9D9;
@@ -58,6 +83,8 @@
 	height: 40px;
 	vertical-align: center;
 }
+
+
 
 
 select:required:invalid {
