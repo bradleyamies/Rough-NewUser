@@ -24,8 +24,8 @@ body .logo_container {
 
 
 textarea { 
-   /* will prevent resizing horizontally */
-   resize:vertical;
+   /* will prevent resizing */
+   resize: none;
 }
 
 .container {
@@ -54,6 +54,17 @@ textarea {
 	padding-left: 5px;
 	padding-right: 0px;
 }
+
+.info {
+	background-color: #D9D9D9;
+	padding-bottom: 0px;
+}
+.info>p {
+	background-color: #D9D9D9;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
 .tag>p {
 	background-color: #D9D9D9;
 	margin-top: 5px;
@@ -84,7 +95,23 @@ textarea {
 	vertical-align: center;
 }
 
+.button_row {
+	padding: 0;
+}
 
+.print_button {
+	width: 100%;
+	background-color: #4E916C;
+	border: 0;
+	border-top: 1px solid black;
+}
+
+.print_button:hover {
+	width: 100%;
+	background-color: #74B78C;
+	border: 0;
+	border-top: 1px solid black;
+}
 
 
 select:required:invalid {
